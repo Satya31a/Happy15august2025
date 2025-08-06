@@ -9,11 +9,11 @@
 
     <meta property="og:title" content="एक दिलचस्प संदेश आपका इंतजार कर रहा है! 🎁">
     <meta property="og:description" content="आपके लिए एक रहस्यमय शुभकामना! जानने के लिए क्लिक करें...">
-    <meta property="og:image" content="https://i.imgur.com/mystery_image.png"> 
+    <meta property="og:image" content="https://i.imgur.com/mystery_image.png">
     <meta property="og:url" content="https://yourusername.github.io/your-repo-name/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="hi_IN">
-    
+
     <script type='text/javascript' src='//pl27352183.profitableratecpm.com/35/2e/4a/352e4a7f38ba29f424b4a1853b9927d6.js'></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
@@ -316,11 +316,12 @@
         }
 
         .cta-text {
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 700;
             color: #FF9933;
             margin-bottom: 20px;
             font-family: 'Kalam', cursive;
+            text-align: center;
         }
 
         .share-buttons {
@@ -386,7 +387,7 @@
         .bottom-banner-ad {
             width: 100%;
             max-width: 320px;
-            height: 100px;
+            height: auto; /* height auto किया गया */
             background: rgba(255, 255, 255, 0.9);
             border: 1px solid #ddd;
             border-radius: 10px;
@@ -526,7 +527,8 @@
 
         <section class="share-section">
             <div class="cta-text">
-                🎊 Celebrate with Pride, Share with Friends! 🎊
+                🎊 आज़ादी का जश्न मनाएं! 🇮🇳<br>
+                अपने खास 3 दोस्तों को भेजें!
             </div>
 
             <div class="message-preview" id="messagePreview">
@@ -547,7 +549,16 @@
         </section>
 
         <div class="bottom-banner-ad">
-            <div>Advertisement Space - 320x100</div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '671a3314574aeaae026346757366c976',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/671a3314574aeaae026346757366c976/invoke.js"></script>
         </div>
 
         <footer class="footer">
@@ -637,7 +648,7 @@
 
 Link देखें: ${currentURL}?from=${encodeURIComponent(userName)}
 
-🎊 Celebrate with Pride, Share with Friends! 🎊`;
+🎊 आज़ादी का जश्न मनाएं! अपने खास 3 दोस्तों को भेजें! 🎊`;
         }
 
         function shareOnWhatsApp() {
@@ -692,7 +703,7 @@ Link देखें: ${currentURL}?from=${encodeURIComponent(userName)}
                 `;
                 specialMessage.innerHTML = `
                     🎁 ${fromParam} ने आपके लिए यह विशेष संदेश भेजा है! 🎁<br>
-                    <small style="opacity: 0.8;">Independence Day की शुभकामनाएं!</small>
+                    <small style="opacity: 0.8;">link par click karke dekhe!</small>
                 `;
                 header.appendChild(specialMessage);
             }
@@ -730,57 +741,4 @@ Link देखें: ${currentURL}?from=${encodeURIComponent(userName)}
         }
 
         function createFireworks() {
-            const fireworksContainer = document.getElementById('fireworks');
-
-            function createFirework() {
-                const firework = document.createElement('div');
-                firework.className = 'firework';
-                firework.style.left = Math.random() * 100 + '%';
-                firework.style.top = Math.random() * 100 + '%';
-                firework.style.animationDuration = (1 + Math.random() * 2) + 's';
-
-                fireworksContainer.appendChild(firework);
-
-                setTimeout(() => {
-                    firework.remove();
-                }, 2000);
-            }
-
-            setInterval(createFirework, 3000);
-        }
-
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.classList.add('show');
-
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
-        }
-
-        function createMoreDoves() {
-            const doveEmojis = ['🕊️', '🦅', '🐦'];
-
-            for (let i = 0; i < 3; i++) {
-                setTimeout(() => {
-                    const dove = document.createElement('div');
-                    dove.className = 'doves';
-                    dove.innerHTML = doveEmojis [Math.floor(Math.random() * doveEmojis.length)];
-                    dove.style.top = (10 + Math.random() * 30) + '%';
-                    dove.style.animationDuration = (12 + Math.random() * 8) + 's';
-                    dove.style.animationDelay = Math.random() * 5 + 's';
-                    document.body.appendChild(dove);
-
-                    setTimeout(() => {
-                        dove.remove();
-                    }, 20000);
-                }, i * 5000);
-            }
-        }
-
-        createMoreDoves();
-        setInterval(createMoreDoves, 20000);
-    </script>
-</body>
-          </html>
+            const fireworksContainer
